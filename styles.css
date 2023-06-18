@@ -13,10 +13,10 @@ body {
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
-  --glowing-color-start: #ff9a00;
-  --glowing-color-middle: #80ff00;
+  --border-color: #a8dd2345;
+  --text-decoration-color: #a8dd23;
+  --glowing-color-middle: #ff9a00;
+  --glowing-color-start: #b3fa00;
 }
 
 .container {
@@ -288,12 +288,18 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* animation */
+/* animation classes*/
 .glowing-animation,
 .link-item:hover,
 a:hover {
   transition: 1s;
   animation: glowing-color-animation 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.easter-egg-animation {
+  transition: 1s;
+  animation: rotate3d 2s;
   animation-timing-function: ease-in-out;
 }
 
@@ -312,5 +318,14 @@ a:hover {
     color: var(--glowing-color-start);
     border-color: var(--glowing-color-start);
     transform: rotate();
+  }
+}
+
+@keyframes rotate3d {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
   }
 }
