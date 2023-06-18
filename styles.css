@@ -264,3 +264,9 @@ body {
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
+
+/* other styles */
+.text-emphasize {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
