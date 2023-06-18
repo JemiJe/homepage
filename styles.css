@@ -49,6 +49,10 @@ body {
   margin-bottom: 15px;
 }
 
+.container:last-child .resume__block {
+  border-bottom: none;
+}
+
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
