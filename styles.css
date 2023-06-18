@@ -15,6 +15,8 @@ body {
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+  --glowing-color-start: #ff9a00;
+  --glowing-color-middle: #80ff00;
 }
 
 .container {
@@ -284,4 +286,31 @@ body {
 .text-emphasize {
   font-weight: bold;
   color: var(--secondary-text-color);
+}
+
+/* animation */
+.glowing-animation,
+.link-item:hover,
+a:hover {
+  transition: 1s;
+  animation: glowing-color-animation 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes glowing-color-animation {
+  from {
+    color: var(--glowing-color-start);
+    border-color: var(--glowing-color-start);
+    transform: rotate();
+  }
+  50% {
+    color: var(--glowing-color-middle);
+    border-color: var(--glowing-color-middle);
+    transform: rotate();
+  }
+  to {
+    color: var(--glowing-color-start);
+    border-color: var(--glowing-color-start);
+    transform: rotate();
+  }
 }
