@@ -96,11 +96,16 @@ body {
   justify-content: center;
 }
 
-.contact-info__item {
+.contact-info__item,
+.link-item {
   color: var(--secondary-text-color);
   text-decoration: none;
   display: flex;
   justify-content: start;
+}
+
+.link-item {
+  color: var(--text-decoration-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -252,17 +257,20 @@ body {
   color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
+.additional-info__languages,
+.additional-info__other {
   margin-bottom: 20px;
 }
 
-.additional-info__languages-header {
+.additional-info__languages-header,
+.additional-info__other-header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
 
-.additional-info__languages-item {
+.additional-info__languages-item,
+.additional-info__other-item {
   color: var(--secondary-text-color);
 }
 
