@@ -32,7 +32,7 @@ body {
 .fv {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .resume {
@@ -190,6 +190,7 @@ body {
 }
 
 .experiences__company-header-name {
+  max-width: 16em;
   color: var(--primary-text-color);
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
@@ -212,7 +213,7 @@ body {
 .experiences__company-project-name {
   color: var(--primary-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin: 10px 0 5px;
 }
 
 .experiences__company-project-responsibilities {
