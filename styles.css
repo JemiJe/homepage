@@ -307,17 +307,14 @@ a:hover {
   from {
     color: var(--glowing-color-start);
     border-color: var(--glowing-color-start);
-    transform: rotate();
   }
   50% {
     color: var(--glowing-color-middle);
     border-color: var(--glowing-color-middle);
-    transform: rotate();
   }
   to {
     color: var(--glowing-color-start);
     border-color: var(--glowing-color-start);
-    transform: rotate();
   }
 }
 
