@@ -164,13 +164,15 @@ body {
   text-align: justify;
 }
 
-.skills__header {
+.skills__header,
+.additional__header {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
 }
 
-.skills__text {
+.skills__text,
+.additional__text {
   color: var(--secondary-text-color);
   text-align: justify;
 }
